@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using PharmacyDB.Services;
+using Template.Services;
 
-namespace PharmacyDB.Controllers;
+namespace Template.Controllers;
 
 [ApiController]
 [Route("[controller]")]

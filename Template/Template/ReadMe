@@ -26,3 +26,22 @@
  - rightclicking the solution file
  - NuGet Packages
  - Searching Microsoft.Data.SqlClient
+ 
+ =================================================================================
+ 
+ 4. Adding Database
+ Connection String : Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True;Trust Server Certificate=True
+ 
+===================================================================================
+
+5. To program add:
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ImyService,MyService>();
+builder.Services.AddScoped<ImyRepository,MyRepository>();
+builder.Services.AddControllers();
+...
+
+app.UseHttpsRedirection();
+app.MapControllers();

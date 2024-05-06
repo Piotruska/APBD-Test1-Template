@@ -1,4 +1,4 @@
-namespace PharmacyDB.Repositories;
+namespace Template.Repositories;
 
 public interface ImyRepository
 {

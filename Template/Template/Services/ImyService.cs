@@ -1,4 +1,4 @@
-namespace PharmacyDB.Services;
+namespace Template.Services;
 
 public interface ImyService
 {

@@ -1,7 +1,7 @@
 using System.Data.Common;
 using Microsoft.Data.SqlClient;
 
-namespace PharmacyDB.Repositories;
+namespace Template.Repositories;
 
 public class MyRepository : ImyRepository
 {

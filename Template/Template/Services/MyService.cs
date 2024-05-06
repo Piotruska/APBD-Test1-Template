@@ -1,6 +1,6 @@
-using PharmacyDB.Repositories;
+using Template.Repositories;
 
-namespace PharmacyDB.Services;
+namespace Template.Services;
 
 public class MyService : ImyService
 {
