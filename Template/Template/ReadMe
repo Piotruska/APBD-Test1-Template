@@ -1,0 +1,28 @@
+
+1. In appsettings.json :
+
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True;Trust Server Certificate=True"
+  },
+  "AllowedHosts": "*"
+}
+
+==================================================================================
+
+2. In Project right click / edit :
+
+        <InvariantGlobalization>false</InvariantGlobalization>
+        
+==================================================================================
+
+3. Remember to install the " Microsoft.Data.SqlClient " by:
+ - rightclicking the solution file
+ - NuGet Packages
+ - Searching Microsoft.Data.SqlClient
