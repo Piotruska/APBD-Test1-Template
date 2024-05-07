@@ -16,6 +16,7 @@ public class MyRepository : ImyRepository
     {
         SqlConnection sqlConnection = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         SqlCommand sqlCommand = new SqlCommand();
+
         sqlCommand.Connection = sqlConnection;
         sqlCommand.CommandText = $"";
         //sqlCommand.Parameters.AddWithValue("@paremeter", parameterPassed);
@@ -36,6 +37,7 @@ public class MyRepository : ImyRepository
     {
         SqlConnection sqlConnection = new SqlConnection(_configuration["ConnectionStrings:DefaultConnection"]);
         SqlCommand sqlCommand = new SqlCommand();
+        sqlCommand.Connection = sqlConnection;
         
         await sqlConnection.OpenAsync();
 
